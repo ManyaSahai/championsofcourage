@@ -1,0 +1,1517 @@
+<!DOCTYPE html>
+<!-- Header Here -->
+<html lang="en">
+
+
+<!-- Mirrored from microssiittee.netlify.app/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Sep 2025 07:33:31 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Champions of Courage</title>
+    <!-- favicons Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/favicons-apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicons-favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicons-favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicons/site.html">
+    <meta name="description"
+        content="Mediox is a versatile medical and healthcare PHP Template. You can make a good professional looking websites with our attractive design which is best for medical clinic, healthcare, hospital, dermatology clinic, cosmetology company, skin care, plastic surgery, beauty clinic, cosmetic clinic, laser surgery, spa, wellness hospital and all other medical and health care related websites and businesses.">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/css-bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-select-bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/animate-animate.min.css">
+    <link rel="stylesheet" href="css/css-all.min.css">
+    <link rel="stylesheet" href="css/jquery-ui-jquery-ui.css">
+    <link rel="stylesheet" href="css/jarallax-jarallax.css">
+    <link rel="stylesheet" href="css/jquery-magnific-popup-jquery.magnific-popup.css">
+    <link rel="stylesheet" href="css/nouislider-nouislider.min.css">
+    <link rel="stylesheet" href="css/nouislider-nouislider.pips.css">
+    <link rel="stylesheet" href="css/tiny-slider-tiny-slider.css">
+    <link rel="stylesheet" href="css/mediox-icons-style.css">
+    <link rel="stylesheet" href="css/css-owl.carousel.min.css">
+    <link rel="stylesheet" href="css/css-owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/css-slick.css">
+
+    <!-- template styles -->
+    <link rel="stylesheet" href="css/css-mediox.css">
+</head>
+
+<body class="custom-cursor">
+    <div class="custom-cursor__cursor"></div>
+    <div class="custom-cursor__cursor-two"></div>
+
+    <div class="preloader">
+        <div class="preloader__image" style="background-image: url(assets/images/loader.html);"></div>
+    </div>
+    <!-- /.preloader --> <a href="#" data-target="html" class="scroll-to-target scroll-to-top">
+        <span class="scroll-to-top__text">back top</span>
+        <span class="scroll-to-top__wrapper"><span class="scroll-to-top__inner"></span></span>
+    </a>
+    <div class="page-wrapper">
+
+        <header class="main-header main-header--two sticky-header sticky-header--normal">
+            <div class="container-fluid">
+                <div class="main-header__inner">
+                    <div class="main-header__logo logo-retina">
+                        <a href='index.html'>
+                            <img src="IMAGE/Champions%20of%20courage%20logo%20FINAL(Dark).png" alt="Mediox PHP"
+                                width="164">
+                        </a>
+                    </div><!-- /.main-header__logo -->
+                    <div class="main-header__right">
+                        <!-- /.sidebar-btn__toggler -->
+                        <nav class="main-header__nav main-menu" id="mobileNav">
+                            <ul class="main-menu__list one-page-scroll-menu">
+                                <li class="">
+                                    <a href="#home">Home</a>
+                                </li>
+                                <li class="scrollToLink"><a href="#about">About Us</a></li>
+                                <li class="scrollToLink has-dropdown" id="storiesDropdown">
+                                    <a href="javascript:void(0)" onclick="toggleDropdown()">Stories of Courage <span
+                                            class="dropdown-arrow">+</span></a>
+                                    <ul class="dropdown" id="dropdownMenu" style="display: none;">
+                                        <li><a href="#services">Blood Cancer</a></li>
+                                        <li><a href="#servicess">Breast Cancer</a></li>
+                                    </ul>
+                                </li>
+                                <li class="scrollToLink"><a href="#team">Share you Story</a></li>
+                                <li class="scrollToLink"><a href="#testimonials">Contact Us</a></li>
+                            </ul>
+                        </nav><!-- /.main-header__nav -->
+                        <div class="mobile-nav__btn mobile-nav__toggler" onclick="toggleMobileMenu()">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div><!-- /.main-header__right -->
+                </div><!-- /.main-header__inner -->
+            </div><!-- /.container-fluid -->
+        </header>
+
+        <style>
+            @media (max-width: 768px) {
+                .main-header__nav {
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    right: 0;
+                    background: white;
+                    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                    z-index: 1000;
+                }
+
+                .main-header__nav.show {
+                    display: block !important;
+                }
+
+                .main-menu__list {
+                    flex-direction: column;
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                }
+
+                .main-menu__list li {
+                    border-bottom: 1px solid #eee;
+                }
+
+                .main-menu__list li:last-child {
+                    border-bottom: none;
+                }
+
+                .main-menu__list a {
+                    display: block;
+                    padding: 15px 20px;
+                    color: #333;
+                    text-decoration: none;
+                }
+
+                .dropdown-arrow {
+                    float: right;
+                    transition: transform 0.3s ease;
+                }
+
+                .has-dropdown.open .dropdown-arrow {
+                    transform: rotate(45deg);
+                }
+
+                .dropdown {
+                    background: #f8f9fa;
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                }
+
+                .dropdown.show {
+                    display: block !important;
+                }
+
+                .dropdown li a {
+                    padding: 12px 40px !important;
+                    border-top: 1px solid #ddd;
+                }
+            }
+
+            /* Desktop hover effect */
+            @media (min-width: 769px) {
+                .dropdown {
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    background: white;
+                    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                    display: none;
+                    min-width: 200px;
+                }
+
+                .has-dropdown:hover .dropdown {
+                    display: block;
+                }
+
+                .dropdown-arrow {
+                    display: none;
+                }
+            }
+        </style>
+
+        <script>
+            function toggleMobileMenu() {
+                const nav = document.getElementById('mobileNav');
+                nav.classList.toggle('show');
+            }
+
+            function toggleDropdown() {
+                const dropdown = document.getElementById('dropdownMenu');
+                const parent = document.getElementById('storiesDropdown');
+
+                if (window.innerWidth <= 768) {
+                    if (dropdown.style.display === 'none' || dropdown.style.display === '') {
+                        dropdown.style.display = 'block';
+                        dropdown.classList.add('show');
+                        parent.classList.add('open');
+                    } else {
+                        dropdown.style.display = 'none';
+                        dropdown.classList.remove('show');
+                        parent.classList.remove('open');
+                    }
+                }
+            }
+
+            // Close mobile menu when clicking dropdown items
+            document.addEventListener('click', function (e) {
+                if (e.target.closest('.dropdown a')) {
+                    if (window.innerWidth <= 768) {
+                        document.getElementById('mobileNav').classList.remove('show');
+                        document.getElementById('dropdownMenu').style.display = 'none';
+                        document.getElementById('storiesDropdown').classList.remove('open');
+                    }
+                }
+            });
+        </script><!-- /.main-header -->
+        <section class="main-slider-one" id="home">
+            <div class="main-slider-one__carousel mediox-owl__carousel mediox-owl__carousel--basic-nav owl-carousel owl-theme"
+                data-owl-options='{
+                "items": 1,
+                "margin": 0,
+                "animateIn": "fadeIn",
+                "animateOut": "fadeOut",
+                "loop": true,
+                "smartSpeed": 700,
+                "nav": false,
+                "dots": false,
+                "autoplay": true,
+                "navText": ["&lt;span class=\"icon-arrow-left\"&gt;&lt;/span&gt;","&lt;span class=\"icon-arrow-right\"&gt;&lt;/span&gt;"]
+            }'>
+                <div class="main-slider-one__item">
+                    <div class="main-slider-one__bg"
+                        style="background-image: url(assets/images/shapes/main-slider-bg-1-1.html);"></div>
+                    <!-- /.main-slider-one__bg -->
+                    <div class="container">
+                        <div class="row gutter-y-60">
+                            <div class="col-xl-9">
+                                <div class="main-slider-one__content">
+                                    <div class="main-slider-one__top">
+                                        <p class="main-slider-one__sub-title">Inspiring Journeys of Courage</p>
+                                        <!-- /.sub-title -->
+                                    </div><!-- /.main-slider-one__top -->
+                                    <h2 class="main-slider-one__title">
+                                        <span class="main-slider-one__title__inner">
+                                            Champions of
+                                            <!-- <span class="main-slider-one__title__image">
+                                                <a href="https://www.youtube.com/watch?v=h9MbznbxlLc"
+                                                    class="main-slider-one__title__video video-btn video-popup">
+                                                    <i class="icon-play"></i>
+                                                    <i class="video-btn__ripple"></i>
+                                                </a> -->
+
+                                            <!-- <img src="images/main-slider-main-slider-video-1-1.jpg" alt="video">
+                                            </span> -->
+
+                                            <br> Courage
+                                            <span class="main-slider-one__title__hover">
+                                                <span
+                                                    class="main-slider-one__title__hover__box main-slider-one__title__hover__box--1"></span>
+                                                <span
+                                                    class="main-slider-one__title__hover__box main-slider-one__title__hover__box--2"></span>
+                                                <span
+                                                    class="main-slider-one__title__hover__box main-slider-one__title__hover__box--3"></span>
+                                                <span
+                                                    class="main-slider-one__title__hover__box main-slider-one__title__hover__box--4"></span>
+                                                <span
+                                                    class="main-slider-one__title__hover__box main-slider-one__title__hover__box--5"></span>
+                                                <span
+                                                    class="main-slider-one__title__hover__box main-slider-one__title__hover__box--6"></span>
+                                                <span
+                                                    class="main-slider-one__title__hover__box main-slider-one__title__hover__box--7"></span>
+                                                <span
+                                                    class="main-slider-one__title__hover__box main-slider-one__title__hover__box--8"></span>
+                                                <span
+                                                    class="main-slider-one__title__hover__box main-slider-one__title__hover__box--9"></span>
+                                                <span
+                                                    class="main-slider-one__title__hover__box main-slider-one__title__hover__box--10"></span>
+                                            </span><!-- /.main-slider-one__title__hover -->
+                                        </span>
+                                    </h2><!-- /.title -->
+                                    <div class="main-slider-one__description">
+                                        <p class="main-slider-one__text">A heartfelt initiative sharing stories of
+                                            strength, resilience, and triumph over breast and blood cancer.</p>
+                                        <!-- /.text -->
+                                    </div><!-- /.description -->
+                                    <div class="main-slider-one__button">
+                                        <div class="main-slider-one__button__inner">
+                                            <a href="services.html" class="main-slider-one__btn mediox-btn">
+                                                <span>Share Your Story</span>
+                                                <span class="mediox-btn__icon"><i
+                                                        class="icon-up-right-arrow"></i></span>
+                                            </a><!-- /.mediox-btn -->
+                                        </div><!-- /.main-slider-one__button__inner -->
+                                    </div><!-- /.button -->
+                                    <img src="images/shapes-main-slider-shape-1-2.png" alt="shape"
+                                        class="main-slider-one__content__shape-1">
+                                    <img src="images/shapes-main-slider-shape-1-3.png" alt="shape"
+                                        class="main-slider-one__content__shape-2">
+                                </div><!-- /.main-slider-one__content -->
+                            </div><!-- /.col-xl-9 -->
+                        </div><!-- /.row gutter-y-60 -->
+                        <div class="main-slider-one__image">
+                            <div class="main-slider-one__patients">
+                                <span class="main-slider-one__patients__icon">
+                                    <i class="icon-rating-rate"></i>
+                                </span><!-- /.main-slider-one__patients__icon -->
+                                <div class="main-slider-one__patients__content">
+                                    <h3 class="main-slider-one__patients__number count-box">
+                                        <span class="count-text" data-stop="100" data-speed="1500"></span>
+                                        <span>+</span>
+                                    </h3>
+                                    <p class="main-slider-one__patients__text">Real Stories, &amp; Shared with Love</p>
+                                </div><!-- /.main-slider-one__patients__content -->
+                            </div><!-- /.main-slider-one__patients -->
+                            <img src="images/main-slider-main-slider-1-1.png" alt="doctor">
+                        </div><!-- /.main-slider-one__image -->
+        </section>
+
+        <section class="about-one section-space" id="about">
+            <div class="container">
+                <div class="row gutter-y-60 align-items-center">
+                    <div class="col-lg-6 wow fadeInLeft" data-wow-duration="1500ms">
+                        <div class="about-one__image">
+                            <div class="about-one__image__one">
+                                <img src="images/about-about-1-1.jpg" alt="about">
+                            </div><!-- /.about-one__image__one -->
+                            <div class="about-one__experience"
+                                style="background-image: url(assets/images/about/about-1-2.html);">
+                                <div class="about-one__experience__content">
+                                    <h3 class="about-one__experience__year">100+</h3>
+                                    <span class="about-one__experience__text">Stories shared </span>
+                                </div><!-- /.about-one__experience__content -->
+                            </div><!-- /.about-one__experience -->
+                        </div><!-- /.about-one__image -->
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-lg-6">
+                        <div class="about-one__content">
+                            <div class="sec-title @@extraClassName wow fadeInUp" data-wow-duration="1500ms">
+                                <div class="sec-title__top">
+
+                                    <img src="images/shapes-sec-title-s-1-1.png" alt="about us" class="sec-title__img">
+
+
+                                    <h6 class="sec-title__tagline">About us</h6><!-- /.sec-title__tagline -->
+
+                                </div><!-- /.sec-title__top -->
+                                <h3 class="sec-title__title">About Champions of <br> Courage</h3>
+                                <!-- /.sec-title__title -->
+                            </div><!-- /.sec-title -->
+                            <div class="about-one__text-box wow fadeInUp" data-wow-duration="1500ms">
+                                <p class="about-one__text">Champions of Courage honors the strength and resilience of
+                                    individuals facing breast cancer and blood cancer. We share authentic patient
+                                    journeys—moments of hope, struggle, and triumph—to inspire others and foster a
+                                    community of support.</p>
+                            </div>
+
+                            <!-- Goals Section - Add this within your existing About Us section -->
+                            <div class="goals-section">
+                                <h3 class="goals-heading">Our Goals:</h3>
+                                <div class="goals-list">
+                                    <p><span class="goal-icon"></span><strong>Inspire:</strong> Show patients they are
+                                        not alone.</p>
+                                    <p><span class="goal-icon"></span><strong>Educate:</strong> Raise awareness of
+                                        breast & blood cancers.</p>
+                                    <p><span class="goal-icon"></span><strong>Empower:</strong> Support patients,
+                                        caregivers & families.</p>
+                                    <p><span class="goal-icon"></span><strong>Encourage:</strong> Build a growing
+                                        support network.</p>
+                                </div>
+                            </div>
+
+                            <style>
+                                .goals-section {
+                                    padding: 15px;
+                                }
+
+                                .goals-heading {
+                                    text-align: center;
+                                    margin-bottom: 15px;
+                                }
+
+                                .goals-list {
+                                    max-width: 100%;
+                                    margin: 0 auto;
+                                    padding: 0 10px;
+                                }
+
+                                .goals-list p {
+                                    display: flex;
+                                    align-items: center;
+                                    margin: 10px 0;
+                                    font-size: 16px;
+                                    white-space: nowrap;
+                                    /* ✅ keep in one line */
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    /* optional for extra safety */
+                                }
+
+                                .goal-icon {
+                                    display: inline-block;
+                                    min-width: 12px;
+                                    height: 12px;
+                                    background: #e91e63;
+                                    border-radius: 50%;
+                                    margin-right: 10px;
+                                }
+
+                                /* 📱 Mobile view */
+                                @media (max-width: 600px) {
+                                    .goals-list p {
+                                        font-size: 12px;
+                                        /* smaller so it fits */
+                                    }
+                                }
+                            </style>
+                            <!-- <div class="about-one__bottom">
+                                <div class="about-one__button wow fadeInUp" data-wow-duration="1500ms"
+                                    data-wow-delay="00ms">
+                                    <a href="history.html" class="mediox-btn">
+                                        <span>know more</span>
+                                        <span class="mediox-btn__icon"><i class="icon-up-right-arrow"></i></span>
+                                    </a>
+                                </div> -->
+                            <div class="about-profile wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="100ms">
+                                <!-- <img src="images/about-about-profile-1-1.jpg" alt="profile"
+                                        class="about-profile__image"> -->
+                                <!-- <div class="about-profile__info">
+                                        <h4 class="about-profile__name">Alexsia Jorgina</h4>
+                                        <p class="about-profile__designation">Co. Founder</p>
+                                    </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <img src="images/about-about-1-3.png" alt="about" class="about-one__shape-1">
+    <img src="images/shapes-about-shape-1-1.png" alt="shape" class="about-one__shape-2">
+    </section>
+
+    <section class="services-one section-space-two" id="services">
+        <div class="services-one__bg" style="background-image: url(assets/images/shapes/services-bg-1-1.html);">
+        </div>
+        <div class="container">
+            <div class="sec-title sec-title--center wow fadeInUp" data-wow-duration="1500ms">
+                <div class="sec-title__top">
+
+                    <img src="images/shapes-sec-title-s-1-2.png" alt="our services" class="sec-title__img">
+
+
+                    <h6 class="sec-title__tagline">Share your Story</h6><!-- /.sec-title__tagline -->
+
+                </div><!-- /.sec-title__top -->
+                <h3 class="sec-title__title">Blood Cancer
+                    <!-- /.sec-title__title -->
+            </div><!-- /.sec-title -->
+            <div class="services-one__carousel mediox-owl__carousel mediox-owl__carousel--basic-nav owl-carousel owl-theme"
+                data-owl-options='{
+                  "items": 1,
+                  "margin": 10,
+                  "loop": true,
+                  "smartSpeed": 700,
+                  "nav": false,
+                  "navText": ["&lt;span class=\"icon-arrow-left\"&gt;&lt;/span&gt;","&lt;span class=\"icon-arrow-right\"&gt;&lt;/span&gt;"],
+                  "dots": true,
+                  "autoplay": true,
+                  "responsive": {
+                    "0": {
+                      "items": 1,
+                      "nav": true,
+                      "dots": false,
+                      "margin": 10
+                    },
+                    "768": {
+                      "items": 2,
+                      "margin": 30
+                    },
+                    "992": {
+                      "items": 3,
+                      "margin": 30
+                    }
+                  }
+                }'>
+                <div class="item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
+                    <div class="service-card">
+                        <div class="service-card__image">
+                            <img src="images/services-service-1-1.jpg" alt="immediate care">
+                        </div><!-- /.service-card__image -->
+                        <span class="service-card__icon">
+                            <i class="icon-medicine"></i>
+                        </span><!-- /.service-card__icon -->
+                        <div class="service-card__content">
+                            <p class="service-card__total-doctors">30+ doctors</p>
+                            <!-- /.service-card__total-doctors -->
+                            <div class="service-card__content__inner">
+                                <h3 class="service-card__title"><a href="service-d-immediate-care.html">immediate
+                                        care</a></h3><!-- /.service-card__title -->
+                                <a href="service-d-immediate-care.html" class="service-card__link">
+                                    <i class="icon-up-right-arrow"></i>
+                                </a><!-- /.service-card__link -->
+                            </div><!-- /.service-card__content__inner -->
+                        </div><!-- /.service-card__content -->
+                    </div><!-- /.service-card -->
+                </div><!-- /.item -->
+                <div class="item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="200ms">
+                    <div class="service-card">
+                        <div class="service-card__image">
+                            <img src="images/services-service-1-2.jpg" alt="Dental Care">
+                        </div><!-- /.service-card__image -->
+                        <span class="service-card__icon">
+                            <i class="icon-tooth"></i>
+                        </span><!-- /.service-card__icon -->
+                        <div class="service-card__content">
+                            <p class="service-card__total-doctors">10+ doctors</p>
+                            <!-- /.service-card__total-doctors -->
+                            <div class="service-card__content__inner">
+                                <h3 class="service-card__title"><a href="service-d-dental-care.html">Dental Care</a>
+                                </h3><!-- /.service-card__title -->
+                                <a href="service-d-dental-care.html" class="service-card__link">
+                                    <i class="icon-up-right-arrow"></i>
+                                </a><!-- /.service-card__link -->
+                            </div><!-- /.service-card__content__inner -->
+                        </div><!-- /.service-card__content -->
+                    </div><!-- /.service-card -->
+                </div><!-- /.item -->
+                <div class="item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="400ms">
+                    <div class="service-card">
+                        <div class="service-card__image">
+                            <img src="images/services-service-1-3.jpg" alt="Neurology Care">
+                        </div><!-- /.service-card__image -->
+                        <span class="service-card__icon">
+                            <i class="icon-brain"></i>
+                        </span><!-- /.service-card__icon -->
+                        <div class="service-card__content">
+                            <p class="service-card__total-doctors">25+ doctors</p>
+                            <!-- /.service-card__total-doctors -->
+                            <div class="service-card__content__inner">
+                                <h3 class="service-card__title"><a href="service-d-neurology-care.html">Neurology
+                                        Care</a></h3><!-- /.service-card__title -->
+                                <a href="service-d-neurology-care.html" class="service-card__link">
+                                    <i class="icon-up-right-arrow"></i>
+                                </a><!-- /.service-card__link -->
+                            </div><!-- /.service-card__content__inner -->
+                        </div><!-- /.service-card__content -->
+                    </div><!-- /.service-card -->
+                </div><!-- /.item -->
+                <div class="item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
+                    <div class="service-card">
+                        <div class="service-card__image">
+                            <img src="images/services-service-1-4.jpg" alt="gynaecologists">
+                        </div><!-- /.service-card__image -->
+                        <span class="service-card__icon">
+                            <i class="icon-womb"></i>
+                        </span><!-- /.service-card__icon -->
+                        <div class="service-card__content">
+                            <p class="service-card__total-doctors">05+ doctors</p>
+                            <!-- /.service-card__total-doctors -->
+                            <div class="service-card__content__inner">
+                                <h3 class="service-card__title"><a
+                                        href="service-d-gynaecologists.html">gynaecologists</a></h3>
+                                <!-- /.service-card__title -->
+                                <a href="service-d-gynaecologists.html" class="service-card__link">
+                                    <i class="icon-up-right-arrow"></i>
+                                </a><!-- /.service-card__link -->
+                            </div><!-- /.service-card__content__inner -->
+                        </div><!-- /.service-card__content -->
+                    </div><!-- /.service-card -->
+                </div><!-- /.item -->
+                <div class="item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="200ms">
+                    <div class="service-card">
+                        <div class="service-card__image">
+                            <img src="images/services-service-1-5.jpg" alt="orthopaedics">
+                        </div><!-- /.service-card__image -->
+                        <span class="service-card__icon">
+                            <i class="icon-bone"></i>
+                        </span><!-- /.service-card__icon -->
+                        <div class="service-card__content">
+                            <p class="service-card__total-doctors">15+ doctors</p>
+                            <!-- /.service-card__total-doctors -->
+                            <div class="service-card__content__inner">
+                                <h3 class="service-card__title"><a href="service-d-orthopaedics.html">orthopaedics</a>
+                                </h3>
+                                <!-- /.service-card__title -->
+                                <a href="service-d-orthopaedics.html" class="service-card__link">
+                                    <i class="icon-up-right-arrow"></i>
+                                </a><!-- /.service-card__link -->
+                            </div><!-- /.service-card__content__inner -->
+                        </div><!-- /.service-card__content -->
+                    </div><!-- /.service-card -->
+                </div><!-- /.item -->
+                <div class="item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="400ms">
+                    <div class="service-card">
+                        <div class="service-card__image">
+                            <img src="images/services-service-1-6.jpg" alt="cardiology">
+                        </div><!-- /.service-card__image -->
+                        <span class="service-card__icon">
+                            <i class="icon-cardiology"></i>
+                        </span><!-- /.service-card__icon -->
+                        <div class="service-card__content">
+                            <p class="service-card__total-doctors">20+ doctors</p>
+                            <!-- /.service-card__total-doctors -->
+                            <div class="service-card__content__inner">
+                                <h3 class="service-card__title"><a href="service-d-cardiology.html">cardiology</a>
+                                </h3><!-- /.service-card__title -->
+                                <a href="service-d-cardiology.html" class="service-card__link">
+                                    <i class="icon-up-right-arrow"></i>
+                                </a><!-- /.service-card__link -->
+                            </div><!-- /.service-card__content__inner -->
+                        </div><!-- /.service-card__content -->
+                    </div><!-- /.service-card -->
+                </div><!-- /.item -->
+                <div class="item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
+                    <div class="service-card">
+                        <div class="service-card__image">
+                            <img src="images/services-service-1-1.jpg" alt="immediate care">
+                        </div><!-- /.service-card__image -->
+                        <span class="service-card__icon">
+                            <i class="icon-medicine"></i>
+                        </span><!-- /.service-card__icon -->
+                        <div class="service-card__content">
+                            <p class="service-card__total-doctors">30+ doctors</p>
+                            <!-- /.service-card__total-doctors -->
+                            <div class="service-card__content__inner">
+                                <h3 class="service-card__title"><a href="service-d-immediate-care.html">immediate
+                                        care</a></h3><!-- /.service-card__title -->
+                                <a href="service-d-immediate-care.html" class="service-card__link">
+                                    <i class="icon-up-right-arrow"></i>
+                                </a><!-- /.service-card__link -->
+                            </div><!-- /.service-card__content__inner -->
+                        </div><!-- /.service-card__content -->
+                    </div><!-- /.service-card -->
+                </div><!-- /.item -->
+                <div class="item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="200ms">
+                    <div class="service-card">
+                        <div class="service-card__image">
+                            <img src="images/services-service-1-2.jpg" alt="Dental Care">
+                        </div><!-- /.service-card__image -->
+                        <span class="service-card__icon">
+                            <i class="icon-tooth"></i>
+                        </span><!-- /.service-card__icon -->
+                        <div class="service-card__content">
+                            <p class="service-card__total-doctors">10+ doctors</p>
+                            <!-- /.service-card__total-doctors -->
+                            <div class="service-card__content__inner">
+                                <h3 class="service-card__title"><a href="service-d-dental-care.html">Dental Care</a>
+                                </h3><!-- /.service-card__title -->
+                                <a href="service-d-dental-care.html" class="service-card__link">
+                                    <i class="icon-up-right-arrow"></i>
+                                </a><!-- /.service-card__link -->
+                            </div><!-- /.service-card__content__inner -->
+                        </div><!-- /.service-card__content -->
+                    </div><!-- /.service-card -->
+                </div><!-- /.item -->
+                <div class="item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="400ms">
+                    <div class="service-card">
+                        <div class="service-card__image">
+                            <img src="images/services-service-1-3.jpg" alt="Neurology Care">
+                        </div><!-- /.service-card__image -->
+                        <span class="service-card__icon">
+                            <i class="icon-brain"></i>
+                        </span><!-- /.service-card__icon -->
+                        <div class="service-card__content">
+                            <p class="service-card__total-doctors">25+ doctors</p>
+                            <!-- /.service-card__total-doctors -->
+                            <div class="service-card__content__inner">
+                                <h3 class="service-card__title"><a href="service-d-neurology-care.html">Neurology
+                                        Care</a></h3><!-- /.service-card__title -->
+                                <a href="service-d-neurology-care.html" class="service-card__link">
+                                    <i class="icon-up-right-arrow"></i>
+                                </a><!-- /.service-card__link -->
+                            </div><!-- /.service-card__content__inner -->
+                        </div><!-- /.service-card__content -->
+                    </div><!-- /.service-card -->
+                </div><!-- /.item -->
+                <div class="item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
+                    <div class="service-card">
+                        <div class="service-card__image">
+                            <img src="images/services-service-1-4.jpg" alt="gynaecologists">
+                        </div><!-- /.service-card__image -->
+                        <span class="service-card__icon">
+                            <i class="icon-womb"></i>
+                        </span><!-- /.service-card__icon -->
+                        <div class="service-card__content">
+                            <p class="service-card__total-doctors">05+ doctors</p>
+                            <!-- /.service-card__total-doctors -->
+                            <div class="service-card__content__inner">
+                                <h3 class="service-card__title"><a
+                                        href="service-d-gynaecologists.html">gynaecologists</a></h3>
+                                <!-- /.service-card__title -->
+                                <a href="service-d-gynaecologists.html" class="service-card__link">
+                                    <i class="icon-up-right-arrow"></i>
+                                </a><!-- /.service-card__link -->
+                            </div><!-- /.service-card__content__inner -->
+                        </div><!-- /.service-card__content -->
+                    </div><!-- /.service-card -->
+                </div><!-- /.item -->
+                <div class="item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="200ms">
+                    <div class="service-card">
+                        <div class="service-card__image">
+                            <img src="images/services-service-1-5.jpg" alt="orthopaedics">
+                        </div><!-- /.service-card__image -->
+                        <span class="service-card__icon">
+                            <i class="icon-bone"></i>
+                        </span><!-- /.service-card__icon -->
+                        <div class="service-card__content">
+                            <p class="service-card__total-doctors">15+ doctors</p>
+                            <!-- /.service-card__total-doctors -->
+                            <div class="service-card__content__inner">
+                                <h3 class="service-card__title"><a href="service-d-orthopaedics.html">orthopaedics</a>
+                                </h3>
+                                <!-- /.service-card__title -->
+                                <a href="service-d-orthopaedics.html" class="service-card__link">
+                                    <i class="icon-up-right-arrow"></i>
+                                </a><!-- /.service-card__link -->
+                            </div><!-- /.service-card__content__inner -->
+                        </div><!-- /.service-card__content -->
+                    </div><!-- /.service-card -->
+                </div><!-- /.item -->
+                <div class="item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="400ms">
+                    <div class="service-card">
+                        <div class="service-card__image">
+                            <img src="images/services-service-1-6.jpg" alt="cardiology">
+                        </div><!-- /.service-card__image -->
+                        <span class="service-card__icon">
+                            <i class="icon-cardiology"></i>
+                        </span><!-- /.service-card__icon -->
+                        <div class="service-card__content">
+                            <p class="service-card__total-doctors">20+ doctors</p>
+                            <!-- /.service-card__total-doctors -->
+                            <div class="service-card__content__inner">
+                                <h3 class="service-card__title"><a href="service-d-cardiology.html">cardiology</a>
+                                </h3><!-- /.service-card__title -->
+                                <a href="service-d-cardiology.html" class="service-card__link">
+                                    <i class="icon-up-right-arrow"></i>
+                                </a><!-- /.service-card__link -->
+                            </div><!-- /.service-card__content__inner -->
+                        </div><!-- /.service-card__content -->
+                    </div><!-- /.service-card -->
+                </div><!-- /.item -->
+            </div><!-- /.services-one__carousel -->
+        </div><!-- /.container -->
+    </section><!-- /.services-one section-space-two -->
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <section class="services-one section-space-two" id="servicess">
+        <div class="services-one__bg" style="background-image: url(assets/images/shapes/services-bg-1-1.html);">
+        </div>
+        <div class="container">
+            <div class="sec-title sec-title--center wow fadeInUp" data-wow-duration="1500ms">
+                <div class="sec-title__top">
+
+                    <img src="images/shapes-sec-title-s-1-2.png" alt="our services" class="sec-title__img">
+
+
+                    <h6 class="sec-title__tagline">Share your Story</h6><!-- /.sec-title__tagline -->
+
+                </div><!-- /.sec-title__top -->
+                <h3 class="sec-title__title">Breast Cancer
+                    <!-- /.sec-title__title -->
+            </div><!-- /.sec-title -->
+            <div class="services-one__carousel mediox-owl__carousel mediox-owl__carousel--basic-nav owl-carousel owl-theme"
+                data-owl-options='{
+                  "items": 1,
+                  "margin": 10,
+                  "loop": true,
+                  "smartSpeed": 700,
+                  "nav": false,
+                  "navText": ["&lt;span class=\"icon-arrow-left\"&gt;&lt;/span&gt;","&lt;span class=\"icon-arrow-right\"&gt;&lt;/span&gt;"],
+                  "dots": true,
+                  "autoplay": true,
+                  "responsive": {
+                    "0": {
+                      "items": 1,
+                      "nav": true,
+                      "dots": false,
+                      "margin": 10
+                    },
+                    "768": {
+                      "items": 2,
+                      "margin": 30
+                    },
+                    "992": {
+                      "items": 3,
+                      "margin": 30
+                    }
+                  }
+                }'>
+                <div class="item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
+                    <div class="service-card">
+                        <div class="service-card__image">
+                            <img src="images/services-service-1-1.jpg" alt="immediate care">
+                        </div><!-- /.service-card__image -->
+                        <span class="service-card__icon">
+                            <i class="icon-medicine"></i>
+                        </span><!-- /.service-card__icon -->
+                        <div class="service-card__content">
+                            <p class="service-card__total-doctors">30+ doctors</p>
+                            <!-- /.service-card__total-doctors -->
+                            <div class="service-card__content__inner">
+                                <h3 class="service-card__title"><a href="service-d-immediate-care.html">immediate
+                                        care</a></h3><!-- /.service-card__title -->
+                                <a href="service-d-immediate-care.html" class="service-card__link">
+                                    <i class="icon-up-right-arrow"></i>
+                                </a><!-- /.service-card__link -->
+                            </div><!-- /.service-card__content__inner -->
+                        </div><!-- /.service-card__content -->
+                    </div><!-- /.service-card -->
+                </div><!-- /.item -->
+                <div class="item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="200ms">
+                    <div class="service-card">
+                        <div class="service-card__image">
+                            <img src="images/services-service-1-2.jpg" alt="Dental Care">
+                        </div><!-- /.service-card__image -->
+                        <span class="service-card__icon">
+                            <i class="icon-tooth"></i>
+                        </span><!-- /.service-card__icon -->
+                        <div class="service-card__content">
+                            <p class="service-card__total-doctors">10+ doctors</p>
+                            <!-- /.service-card__total-doctors -->
+                            <div class="service-card__content__inner">
+                                <h3 class="service-card__title"><a href="service-d-dental-care.html">Dental Care</a>
+                                </h3><!-- /.service-card__title -->
+                                <a href="service-d-dental-care.html" class="service-card__link">
+                                    <i class="icon-up-right-arrow"></i>
+                                </a><!-- /.service-card__link -->
+                            </div><!-- /.service-card__content__inner -->
+                        </div><!-- /.service-card__content -->
+                    </div><!-- /.service-card -->
+                </div><!-- /.item -->
+                <div class="item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="400ms">
+                    <div class="service-card">
+                        <div class="service-card__image">
+                            <img src="images/services-service-1-3.jpg" alt="Neurology Care">
+                        </div><!-- /.service-card__image -->
+                        <span class="service-card__icon">
+                            <i class="icon-brain"></i>
+                        </span><!-- /.service-card__icon -->
+                        <div class="service-card__content">
+                            <p class="service-card__total-doctors">25+ doctors</p>
+                            <!-- /.service-card__total-doctors -->
+                            <div class="service-card__content__inner">
+                                <h3 class="service-card__title"><a href="service-d-neurology-care.html">Neurology
+                                        Care</a></h3><!-- /.service-card__title -->
+                                <a href="service-d-neurology-care.html" class="service-card__link">
+                                    <i class="icon-up-right-arrow"></i>
+                                </a><!-- /.service-card__link -->
+                            </div><!-- /.service-card__content__inner -->
+                        </div><!-- /.service-card__content -->
+                    </div><!-- /.service-card -->
+                </div><!-- /.item -->
+                <div class="item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
+                    <div class="service-card">
+                        <div class="service-card__image">
+                            <img src="images/services-service-1-4.jpg" alt="gynaecologists">
+                        </div><!-- /.service-card__image -->
+                        <span class="service-card__icon">
+                            <i class="icon-womb"></i>
+                        </span><!-- /.service-card__icon -->
+                        <div class="service-card__content">
+                            <p class="service-card__total-doctors">05+ doctors</p>
+                            <!-- /.service-card__total-doctors -->
+                            <div class="service-card__content__inner">
+                                <h3 class="service-card__title"><a
+                                        href="service-d-gynaecologists.html">gynaecologists</a></h3>
+                                <!-- /.service-card__title -->
+                                <a href="service-d-gynaecologists.html" class="service-card__link">
+                                    <i class="icon-up-right-arrow"></i>
+                                </a><!-- /.service-card__link -->
+                            </div><!-- /.service-card__content__inner -->
+                        </div><!-- /.service-card__content -->
+                    </div><!-- /.service-card -->
+                </div><!-- /.item -->
+                <div class="item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="200ms">
+                    <div class="service-card">
+                        <div class="service-card__image">
+                            <img src="images/services-service-1-5.jpg" alt="orthopaedics">
+                        </div><!-- /.service-card__image -->
+                        <span class="service-card__icon">
+                            <i class="icon-bone"></i>
+                        </span><!-- /.service-card__icon -->
+                        <div class="service-card__content">
+                            <p class="service-card__total-doctors">15+ doctors</p>
+                            <!-- /.service-card__total-doctors -->
+                            <div class="service-card__content__inner">
+                                <h3 class="service-card__title"><a href="service-d-orthopaedics.html">orthopaedics</a>
+                                </h3>
+                                <!-- /.service-card__title -->
+                                <a href="service-d-orthopaedics.html" class="service-card__link">
+                                    <i class="icon-up-right-arrow"></i>
+                                </a><!-- /.service-card__link -->
+                            </div><!-- /.service-card__content__inner -->
+                        </div><!-- /.service-card__content -->
+                    </div><!-- /.service-card -->
+                </div><!-- /.item -->
+                <div class="item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="400ms">
+                    <div class="service-card">
+                        <div class="service-card__image">
+                            <img src="images/services-service-1-6.jpg" alt="cardiology">
+                        </div><!-- /.service-card__image -->
+                        <span class="service-card__icon">
+                            <i class="icon-cardiology"></i>
+                        </span><!-- /.service-card__icon -->
+                        <div class="service-card__content">
+                            <p class="service-card__total-doctors">20+ doctors</p>
+                            <!-- /.service-card__total-doctors -->
+                            <div class="service-card__content__inner">
+                                <h3 class="service-card__title"><a href="service-d-cardiology.html">cardiology</a>
+                                </h3><!-- /.service-card__title -->
+                                <a href="service-d-cardiology.html" class="service-card__link">
+                                    <i class="icon-up-right-arrow"></i>
+                                </a><!-- /.service-card__link -->
+                            </div><!-- /.service-card__content__inner -->
+                        </div><!-- /.service-card__content -->
+                    </div><!-- /.service-card -->
+                </div><!-- /.item -->
+                <div class="item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
+                    <div class="service-card">
+                        <div class="service-card__image">
+                            <img src="images/services-service-1-1.jpg" alt="immediate care">
+                        </div><!-- /.service-card__image -->
+                        <span class="service-card__icon">
+                            <i class="icon-medicine"></i>
+                        </span><!-- /.service-card__icon -->
+                        <div class="service-card__content">
+                            <p class="service-card__total-doctors">30+ doctors</p>
+                            <!-- /.service-card__total-doctors -->
+                            <div class="service-card__content__inner">
+                                <h3 class="service-card__title"><a href="service-d-immediate-care.html">immediate
+                                        care</a></h3><!-- /.service-card__title -->
+                                <a href="service-d-immediate-care.html" class="service-card__link">
+                                    <i class="icon-up-right-arrow"></i>
+                                </a><!-- /.service-card__link -->
+                            </div><!-- /.service-card__content__inner -->
+                        </div><!-- /.service-card__content -->
+                    </div><!-- /.service-card -->
+                </div><!-- /.item -->
+                <div class="item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="200ms">
+                    <div class="service-card">
+                        <div class="service-card__image">
+                            <img src="images/services-service-1-2.jpg" alt="Dental Care">
+                        </div><!-- /.service-card__image -->
+                        <span class="service-card__icon">
+                            <i class="icon-tooth"></i>
+                        </span><!-- /.service-card__icon -->
+                        <div class="service-card__content">
+                            <p class="service-card__total-doctors">10+ doctors</p>
+                            <!-- /.service-card__total-doctors -->
+                            <div class="service-card__content__inner">
+                                <h3 class="service-card__title"><a href="service-d-dental-care.html">Dental Care</a>
+                                </h3><!-- /.service-card__title -->
+                                <a href="service-d-dental-care.html" class="service-card__link">
+                                    <i class="icon-up-right-arrow"></i>
+                                </a><!-- /.service-card__link -->
+                            </div><!-- /.service-card__content__inner -->
+                        </div><!-- /.service-card__content -->
+                    </div><!-- /.service-card -->
+                </div><!-- /.item -->
+                <div class="item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="400ms">
+                    <div class="service-card">
+                        <div class="service-card__image">
+                            <img src="images/services-service-1-3.jpg" alt="Neurology Care">
+                        </div><!-- /.service-card__image -->
+                        <span class="service-card__icon">
+                            <i class="icon-brain"></i>
+                        </span><!-- /.service-card__icon -->
+                        <div class="service-card__content">
+                            <p class="service-card__total-doctors">25+ doctors</p>
+                            <!-- /.service-card__total-doctors -->
+                            <div class="service-card__content__inner">
+                                <h3 class="service-card__title"><a href="service-d-neurology-care.html">Neurology
+                                        Care</a></h3><!-- /.service-card__title -->
+                                <a href="service-d-neurology-care.html" class="service-card__link">
+                                    <i class="icon-up-right-arrow"></i>
+                                </a><!-- /.service-card__link -->
+                            </div><!-- /.service-card__content__inner -->
+                        </div><!-- /.service-card__content -->
+                    </div><!-- /.service-card -->
+                </div><!-- /.item -->
+                <div class="item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
+                    <div class="service-card">
+                        <div class="service-card__image">
+                            <img src="images/services-service-1-4.jpg" alt="gynaecologists">
+                        </div><!-- /.service-card__image -->
+                        <span class="service-card__icon">
+                            <i class="icon-womb"></i>
+                        </span><!-- /.service-card__icon -->
+                        <div class="service-card__content">
+                            <p class="service-card__total-doctors">05+ doctors</p>
+                            <!-- /.service-card__total-doctors -->
+                            <div class="service-card__content__inner">
+                                <h3 class="service-card__title"><a
+                                        href="service-d-gynaecologists.html">gynaecologists</a></h3>
+                                <!-- /.service-card__title -->
+                                <a href="service-d-gynaecologists.html" class="service-card__link">
+                                    <i class="icon-up-right-arrow"></i>
+                                </a><!-- /.service-card__link -->
+                            </div><!-- /.service-card__content__inner -->
+                        </div><!-- /.service-card__content -->
+                    </div><!-- /.service-card -->
+                </div><!-- /.item -->
+                <div class="item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="200ms">
+                    <div class="service-card">
+                        <div class="service-card__image">
+                            <img src="images/services-service-1-5.jpg" alt="orthopaedics">
+                        </div><!-- /.service-card__image -->
+                        <span class="service-card__icon">
+                            <i class="icon-bone"></i>
+                        </span><!-- /.service-card__icon -->
+                        <div class="service-card__content">
+                            <p class="service-card__total-doctors">15+ doctors</p>
+                            <!-- /.service-card__total-doctors -->
+                            <div class="service-card__content__inner">
+                                <h3 class="service-card__title"><a href="service-d-orthopaedics.html">orthopaedics</a>
+                                </h3>
+                                <!-- /.service-card__title -->
+                                <a href="service-d-orthopaedics.html" class="service-card__link">
+                                    <i class="icon-up-right-arrow"></i>
+                                </a><!-- /.service-card__link -->
+                            </div><!-- /.service-card__content__inner -->
+                        </div><!-- /.service-card__content -->
+                    </div><!-- /.service-card -->
+                </div><!-- /.item -->
+                <div class="item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="400ms">
+                    <div class="service-card">
+                        <div class="service-card__image">
+                            <img src="images/services-service-1-6.jpg" alt="cardiology">
+                        </div><!-- /.service-card__image -->
+                        <span class="service-card__icon">
+                            <i class="icon-cardiology"></i>
+                        </span><!-- /.service-card__icon -->
+                        <div class="service-card__content">
+                            <p class="service-card__total-doctors">20+ doctors</p>
+                            <!-- /.service-card__total-doctors -->
+                            <div class="service-card__content__inner">
+                                <h3 class="service-card__title"><a href="service-d-cardiology.html">cardiology</a>
+                                </h3><!-- /.service-card__title -->
+                                <a href="service-d-cardiology.html" class="service-card__link">
+                                    <i class="icon-up-right-arrow"></i>
+                                </a><!-- /.service-card__link -->
+                            </div><!-- /.service-card__content__inner -->
+                        </div><!-- /.service-card__content -->
+                    </div><!-- /.service-card -->
+                </div><!-- /.item -->
+            </div><!-- /.services-one__carousel -->
+        </div><!-- /.container -->
+    </section><!-- /.services-one section-space-two -->
+    <br>
+    <br>
+    <br>
+
+
+    <section class="appointment-one section-space-bottom">
+        <div class="appointment-one__bg mediox-jarallax" data-jarallax data-speed="0.3s"
+            style="background-image: url(assets/images/backgrounds/appointment-bg.html);">
+            <div class="appointment-one__bg__inner"
+                style="background-image: url(assets/images/shapes/appointment-shape-bg.html);"></div>
+            <div class="appointment-one__bg__shape">
+                <div class="appointment-one__bg__shape__1">
+                    <div class="appointment-one__bg__shape__2"></div><!-- /.appointment-one__bg__shape__2 -->
+                </div><!-- /.appointment-one__bg__shape__1 -->
+            </div><!-- /.appointment-one__bg__shape -->
+        </div><!-- /.appointment-one__bg -->
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="appointment-one__content">
+                        <h3 class="appointment-one__title">Book An Appointment</h3><!-- /.appointment-one__title -->
+                        <form action="https://microssiittee.netlify.app/assets/inc/sendemail.php"
+                            class="appointment-one__form contact-form-validated form-one wow fadeInUp"
+                            data-wow-duration="1500ms">
+                            <div class="form-one__group">
+                                <div class="form-one__control">
+                                    <input type="text" name="name" placeholder="Full Name*">
+                                </div><!-- /.form-one__control -->
+                                <div class="form-one__control">
+                                    <input type="email" name="email" placeholder="Email Address*">
+                                </div><!-- /.form-one__control -->
+                                <div class="form-one__control">
+                                    <input type="tel" name="number" placeholder="Phone Number">
+                                </div><!-- /.form-one__control -->
+                                <div class="form-one__control appointment-one__form__date">
+                                    <input type="text" name="date" placeholder="Select Date*" id="datepicker"
+                                        class="mediox-datepicker">
+                                    <span class="appointment-one__form__date__arrow">
+                                        <i class="icon-caret-down"></i>
+                                    </span><!-- /.appointment-one__form__date__arrow -->
+                                </div><!-- /.form-one__control -->
+                                <div class="form-one__control">
+                                    <select class="selectpicker" aria-label="Type of Service">
+                                        <option selected>Type of Service</option>
+                                        <option value="1">immediate care</option>
+                                        <option value="2">dental care</option>
+                                        <option value="3">neurology care</option>
+                                        <option value="4">gynaecologists</option>
+                                        <option value="5">orthopaedics</option>
+                                        <option value="6">cardiology</option>
+                                    </select>
+                                </div><!-- /.form-one__control -->
+                                <div class="form-one__control">
+                                    <select class="selectpicker" aria-label="Name a Doctor">
+                                        <option selected>Name a Doctor</option>
+                                        <option value="1">Leslie Alexander</option>
+                                        <option value="2">Mike Hardson</option>
+                                        <option value="3">Anthony B. Castillo</option>
+                                        <option value="4">Adolfo Carr</option>
+                                        <option value="5">Sarah Albert</option>
+                                        <option value="6">kevin martin</option>
+                                    </select>
+                                </div><!-- /.form-one__control -->
+                                <div class="form-one__control form-one__control--full">
+                                    <textarea name="message" placeholder="Type Here..."></textarea>
+                                    <!-- Add this right before the submit button in your form -->
+                                    <div class="form-one__control form-one__control--full consent-section">
+                                        <h4 class="consent-heading">Consent & Acknowledgement</h4>
+                                        <div class="consent-checkboxes">
+                                            <label class="consent-checkbox">
+                                                <input type="checkbox" id="consent1" name="consent1" required>
+                                                <span class="consent-checkmark">✓</span>
+                                                <span class="consent-text">I agree to share my story on Champions of
+                                                    Courage.</span>
+                                            </label>
+
+                                            <label class="consent-checkbox">
+                                                <input type="checkbox" id="consent2" name="consent2" required>
+                                                <span class="consent-checkmark">✓</span>
+                                                <span class="consent-text">I consent to the use of my story/images (or
+                                                    choose anonymous).</span>
+                                            </label>
+
+                                            <label class="consent-checkbox">
+                                                <input type="checkbox" id="consent3" name="consent3" required>
+                                                <span class="consent-checkmark">✓</span>
+                                                <span class="consent-text">I understand my submission may be edited for
+                                                    clarity or length.</span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <!-- JavaScript for form validation -->
+                                    <script>
+                                        document.addEventListener('DOMContentLoaded', function () {
+                                            const form = document.querySelector('.appointment-one__form');
+                                            const submitButton = form.querySelector('button[type="submit"]');
+                                            const checkboxes = form.querySelectorAll(
+                                                'input[type="checkbox"][required]');
+
+                                            function validateForm() {
+                                                let allChecked = true;
+                                                checkboxes.forEach(checkbox => {
+                                                    if (!checkbox.checked) {
+                                                        allChecked = false;
+                                                    }
+                                                });
+
+                                                if (allChecked) {
+                                                    submitButton.disabled = false;
+                                                    submitButton.style.opacity = '1';
+                                                    submitButton.style.cursor = 'pointer';
+                                                } else {
+                                                    submitButton.disabled = true;
+                                                    submitButton.style.opacity = '0.5';
+                                                    submitButton.style.cursor = 'not-allowed';
+                                                }
+                                            }
+
+                                            // Initial validation
+                                            validateForm();
+
+                                            // Add event listeners to checkboxes
+                                            checkboxes.forEach(checkbox => {
+                                                checkbox.addEventListener('change', validateForm);
+                                            });
+
+                                            // Prevent form submission if not all checkboxes are checked
+                                            form.addEventListener('submit', function (e) {
+                                                let allChecked = true;
+                                                checkboxes.forEach(checkbox => {
+                                                    if (!checkbox.checked) {
+                                                        allChecked = false;
+                                                    }
+                                                });
+
+                                                if (!allChecked) {
+                                                    e.preventDefault();
+                                                    alert(
+                                                        'Please check all consent boxes before submitting.'
+                                                    );
+                                                }
+                                            });
+                                        });
+                                    </script>
+
+                                    <style>
+                                        /* Consent Section Styles */
+                                        .consent-section {
+                                            margin: 20px 0;
+                                            padding: 25px;
+                                            background: rgba(255, 255, 255, 0.1);
+                                            border-radius: 8px;
+                                            border: 1px solid rgba(255, 255, 255, 0.2);
+                                        }
+
+                                        .consent-heading {
+                                            font-size: 1.3rem;
+                                            color: white;
+                                            margin-bottom: 20px;
+                                            font-weight: 600;
+                                        }
+
+                                        .consent-checkboxes {
+                                            display: flex;
+                                            flex-direction: column;
+                                            gap: 15px;
+                                        }
+
+                                        .consent-checkbox {
+                                            display: flex;
+                                            align-items: flex-start;
+                                            color: white;
+                                            font-size: 0.95rem;
+                                            line-height: 1.5;
+                                            cursor: pointer;
+                                            position: relative;
+                                        }
+
+                                        .consent-checkbox input[type="checkbox"] {
+                                            position: absolute;
+                                            opacity: 0;
+                                            cursor: pointer;
+                                        }
+
+                                        .consent-checkmark {
+                                            width: 20px;
+                                            height: 20px;
+                                            border: 2px solid white;
+                                            border-radius: 3px;
+                                            margin-right: 12px;
+                                            margin-top: 2px;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            background: transparent;
+                                            color: transparent;
+                                            transition: all 0.3s ease;
+                                            flex-shrink: 0;
+                                        }
+
+                                        .consent-checkbox input[type="checkbox"]:checked+.consent-checkmark {
+                                            background: white;
+                                            color: #c41e3a;
+                                            font-weight: bold;
+                                        }
+
+                                        .consent-text {
+                                            flex: 1;
+                                        }
+
+                                        /* Submit button disabled state */
+                                        button[type="submit"]:disabled {
+                                            opacity: 0.5 !important;
+                                            cursor: not-allowed !important;
+                                            pointer-events: none;
+                                        }
+
+                                        /* Responsive adjustments */
+                                        @media (max-width: 768px) {
+                                            .consent-section {
+                                                padding: 20px 15px;
+                                            }
+
+                                            .consent-heading {
+                                                font-size: 1.2rem;
+                                            }
+
+                                            .consent-checkbox {
+                                                font-size: 0.9rem;
+                                            }
+                                        }
+                                    </style>
+                                </div><!-- /.form-one__control -->
+                                <div class="form-one__control form-one__control--full">
+                                    <button type="submit" class="mediox-btn">
+                                        <span>book appointment</span>
+                                        <span class="mediox-btn__icon"><i class="icon-up-right-arrow"></i></span>
+                                    </button><!-- /.mediox-btn -->
+                                </div><!-- /.form-one__control -->
+                            </div><!-- /.form-one__group -->
+                        </form><!-- /.form-one -->
+                        <div class="result"></div><!-- /.result -->
+                    </div><!-- /.appointment-one__content -->
+                </div><!-- /.col-xl-12 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+        <img src="images/shapes-appointment-shape-1-1.png" alt="shape" class="appointment-one__shape-1">
+        <img src="images/shapes-appointment-shape-1-2.png" alt="shape" class="appointment-one__shape-2">
+        <img src="images/shapes-appointment-shape-1-3.png" alt="shape" class="appointment-one__shape-3">
+    </section><!-- /.appointment-one section-space-bottom -->
+    <br>
+    <br>
+    <br>
+
+    <aside class="sidebar-one">
+        <div class="sidebar-one__overlay sidebar-btn__toggler"></div><!-- /.siderbar-ovarlay -->
+        <div class="sidebar-one__content">
+            <span class="sidebar-one__close sidebar-btn__toggler"><i class="icon-close"></i></span>
+            <div class="sidebar-one__logo sidebar-one__item logo-retina">
+                <a aria-label='logo image' href='index.html'><img src="images/images-logo-light.png" width="164"
+                        alt="logo">
+                </a>
+            </div><!-- /.sidebar-one__logo -->
+            <div class="sidebar-one__about sidebar-one__item">
+                <p class="sidebar-one__about__text">Here is main text quis nostrud exercitation ullamco laboris nisi
+                    here is itealic aliquip ex ea com</p>
+            </div><!-- /.sidebar-one__about -->
+            <div class="sidebar-one__info sidebar-one__item">
+                <h4 class="sidebar-one__title">Contact</h4>
+                <ul class="sidebar-one__info__list">
+                    <li>
+                        <span class="sidebar-one__info__icon sidebar-one__info__icon--location">
+                            <i class="icon-location"></i>
+                        </span>
+                        <address>85 Ketch Harbour Road Bensal
+                            PA 19020</address>
+                    </li>
+                    <li>
+                        <span class="sidebar-one__info__icon">
+                            <i class="icon-paper-plane"></i>
+                        </span>
+                        <a href="mailto:needhelp@company.com">needhelp@company.com</a>
+                    </li>
+                    <li>
+                        <span class="sidebar-one__info__icon">
+                            <i class="icon-telephone"></i>
+                        </span>
+                        <a href="tel:+9156980036420">+9156980036420</a>
+                    </li>
+                </ul><!-- /.sidebar-one__info__list -->
+            </div><!-- /.sidebar-one__info -->
+            <div class="social-links sidebar-one__item">
+                <a href="https://facebook.com/">
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                    <span class="sr-only">Facebook</span>
+                </a>
+                <a href="https://twitter.com/">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                    <span class="sr-only">Twitter</span>
+                </a>
+                <a href="https://instagram.com/">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                    <span class="sr-only">Instagram</span>
+                </a>
+                <a href="https://youtube.com/">
+                    <i class="fab fa-youtube" aria-hidden="true"></i>
+                    <span class="sr-only">Youtube</span>
+                </a>
+            </div><!-- /sidebar-one__social -->
+            <div class="sidebar-one__newsletter sidebar-one__item">
+                <label class="sidebar-one__title" for="sidebar-email">Newsletter</label>
+                <form action="#" class="sidebar-one__newsletter__inner mc-form" data-url="MAILCHIMP_FORM_URL">
+                    <input type="email" name="EMAIL" id="sidebar-email" class="sidebar-one__newsletter__input"
+                        placeholder="Email Address">
+                    <button type="submit" class="sidebar-one__newsletter__btn"><span class="icon-email"
+                            aria-hidden="true"></span></button>
+                </form>
+                <div class="mc-form__response"></div><!-- /.mc-form__response -->
+            </div><!-- /.sidebar-one__form -->
+        </div><!-- /.sidebar__content -->
+    </aside><!-- /.sidebar-one -->
+    <div class="search-popup">
+        <div class="search-popup__overlay search-toggler"></div>
+        <!-- /.search-popup__overlay -->
+        <div class="search-popup__content">
+            <form role="search" method="get" class="search-popup__form" action="#">
+                <input type="text" id="search" placeholder="Search Here...">
+                <button type="submit" aria-label="search submit" class="mediox-btn">
+                    <i class="icon-search"></i>
+                </button>
+            </form>
+        </div>
+        <!-- /.search-popup__content -->
+    </div>
+    <!-- /.search-popup -->
+
+    <footer class="main-footer section-space-top"
+        style="background: linear-gradient(to bottom, #ff9a9e 0%, #f06268 40%, #e03b44 70%, #bc202e 100%); color:#fff;">
+
+        <!-- /.main-footer__bg -->
+        <div class="container">
+            <div class="row gutter-y-40">
+                <div class="col-xl-4 col-lg-6 col-md-7 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
+                    <div class="footer-widget footer-widget--about">
+                        <div class="footer-widget__logo logo-retina">
+                            <a href='index.html'>
+                                <img src="IMAGE/Champions%20of%20courage%20logo%20FINAL(Dark).png" alt="Mediox PHP"
+                                    width="164">
+                            </a>
+                        </div><!-- /.footer-widget__logo -->
+                        <p class="footer-widget__about-text">Champions of Courage shares real stories of strength and
+                            hope from breast and blood cancer survivors, inspiring awareness and support.</p>
+                        <!-- /.footer-widget__about-text -->
+
+
+                    </div><!-- /.footer-widget -->
+                </div><!-- /.col-xl-4 -->
+                <style>
+                    .footer-widget__logo,
+                    .footer-widget__about-text {
+                        text-align: center;
+                        /* centers logo and text */
+                        display: block;
+                        margin: 0 auto;
+                        /* keeps them centered */
+                        position: relative;
+                        left: 380px;
+                        /* push more to the right */
+                    }
+
+                    /* ✅ Responsive fix */
+                    @media (max-width: 768px) {
+
+                        .footer-widget__logo,
+                        .footer-widget__about-text {
+                            left: 0;
+                            /* reset shift on smaller screens */
+                        }
+                    }
+                </style>
+
+
+
+
+                <div class="main-footer__bottom">
+
+                    <p class="main-footer__copyright">
+                        &copy; Copyrights Reserved <span class="dynamic-year"></span> Champions of Courage
+                    </p>
+                    <style>
+                        .main-footer__copyright {
+                            text-align: center;
+                            white-space: nowrap;
+                            /* force single line */
+                        }
+
+                        /* Responsive font resizing */
+                        @media (max-width: 768px) {
+                            .main-footer__copyright {
+                                font-size: 12px;
+                                /* smaller on tablets */
+                            }
+                        }
+
+                        @media (max-width: 480px) {
+                            .main-footer__copyright {
+                                font-size: 10px;
+                                /* even smaller on mobiles */
+                            }
+                        }
+                    </style>
+                </div><!-- /.main-footer__bottom -->
+            </div><!-- /.container -->
+    </footer><!-- /.main-footer section-space-top -->
+    </div><!-- /.page-wrapper -->
+    <div class="mobile-nav__wrapper">
+        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+        <!-- /.mobile-nav__overlay -->
+        <div class="mobile-nav__content">
+            <span class="mobile-nav__close mobile-nav__toggler"><i class="icon-close"></i></span>
+
+            <div class="logo-box logo-retina">
+                <a aria-label='logo image' href='index.html'><img
+                        src="IMAGE/Champions%20of%20courage%20logo%20FINAL(Dark).png" width="164" alt=""></a>
+            </div>
+            <!-- /.logo-box -->
+            <div class="mobile-nav__container"></div>
+            <!-- /.mobile-nav__container -->
+
+
+            <!-- /.mobile-nav__content -->
+        </div>
+        <!-- /.mobile-nav__wrapper -->
+        <!-- JS Here -->
+        <script src="js/jquery-jquery-3.7.0.min.js"></script>
+        <script src="js/js-bootstrap.bundle.min.js"></script>
+        <script src="js/bootstrap-select-bootstrap-select.min.js"></script>
+        <script src="js/jarallax-jarallax.min.js"></script>
+        <script src="js/jquery-ui-jquery-ui.js"></script>
+        <script src="js/jquery-ajaxchimp-jquery.ajaxchimp.min.js"></script>
+        <script src="js/jquery-appear-jquery.appear.min.js"></script>
+        <script src="js/jquery-circle-progress-jquery.circle-progress.min.js"></script>
+        <script src="js/jquery-magnific-popup-jquery.magnific-popup.min.js"></script>
+        <script src="js/jquery-validate-jquery.validate.min.js"></script>
+        <script src="js/nouislider-nouislider.min.js"></script>
+        <script src="js/tiny-slider-tiny-slider.js"></script>
+        <script src="js/wnumb-wNumb.min.js"></script>
+        <script src="js/js-owl.carousel.min.js"></script>
+        <script src="js/js-slick.min.js"></script>
+        <script src="js/wow-wow.js"></script>
+        <script src="js/imagesloaded-imagesloaded.min.js"></script>
+        <script src="js/isotope-isotope.js"></script>
+        <script src="js/countdown-countdown.min.js"></script>
+        <script src="js/jquery-circleType-jquery.circleType.js"></script>
+        <script src="js/jquery-lettering-jquery.lettering.min.js"></script>
+        <!-- template js -->
+        <script src="js/js-mediox.js"></script>
+</body>
+
+
+<!-- Mirrored from microssiittee.netlify.app/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Sep 2025 07:34:29 GMT -->
+
+</html>
