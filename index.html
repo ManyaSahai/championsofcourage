@@ -67,16 +67,15 @@
                     </div><!-- /.main-header__logo -->
                     <div class="main-header__right">
                         <!-- /.sidebar-btn__toggler -->
-                        <nav class="main-header__nav main-menu" id="mobileNav">
+                        <nav class="main-header__nav main-menu">
                             <ul class="main-menu__list one-page-scroll-menu">
                                 <li class="">
                                     <a href="#home">Home</a>
                                 </li>
                                 <li class="scrollToLink"><a href="#about">About Us</a></li>
-                                <li class="scrollToLink has-dropdown" id="storiesDropdown">
-                                    <a href="javascript:void(0)" onclick="toggleDropdown()">Stories of Courage <span
-                                            class="dropdown-arrow">+</span></a>
-                                    <ul class="dropdown" id="dropdownMenu" style="display: none;">
+                                <li class="scrollToLink dropdown-parent">
+                                    <a href="javascript:void(0)">Stories of Courage</a>
+                                    <ul class="dropdown">
                                         <li><a href="#services">Blood Cancer</a></li>
                                         <li><a href="#servicess">Breast Cancer</a></li>
                                     </ul>
@@ -85,7 +84,7 @@
                                 <li class="scrollToLink"><a href="#testimonials">Contact Us</a></li>
                             </ul>
                         </nav><!-- /.main-header__nav -->
-                        <div class="mobile-nav__btn mobile-nav__toggler" onclick="toggleMobileMenu()">
+                        <div class="mobile-nav__btn mobile-nav__toggler">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -96,6 +95,7 @@
         </header>
 
         <style>
+            /* Mobile Dropdown Styles */
             @media (max-width: 768px) {
                 .main-header__nav {
                     display: none;
@@ -103,116 +103,68 @@
                     top: 100%;
                     left: 0;
                     right: 0;
-                    background: white;
-                    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-                    z-index: 1000;
+                    background: #fff;
+                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
                 }
 
-                .main-header__nav.show {
-                    display: block !important;
+                .main-header__nav.active {
+                    display: block;
                 }
 
                 .main-menu__list {
                     flex-direction: column;
-                    margin: 0;
                     padding: 0;
-                    list-style: none;
-                }
-
-                .main-menu__list li {
-                    border-bottom: 1px solid #eee;
-                }
-
-                .main-menu__list li:last-child {
-                    border-bottom: none;
-                }
-
-                .main-menu__list a {
-                    display: block;
-                    padding: 15px 20px;
-                    color: #333;
-                    text-decoration: none;
-                }
-
-                .dropdown-arrow {
-                    float: right;
-                    transition: transform 0.3s ease;
-                }
-
-                .has-dropdown.open .dropdown-arrow {
-                    transform: rotate(45deg);
                 }
 
                 .dropdown {
+                    position: static;
+                    opacity: 1;
+                    visibility: visible;
+                    transform: none;
+                    box-shadow: none;
                     background: #f8f9fa;
-                    margin: 0;
-                    padding: 0;
-                    list-style: none;
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: max-height 0.3s ease;
                 }
 
-                .dropdown.show {
-                    display: block !important;
+                .dropdown-parent.dropdown-open .dropdown {
+                    max-height: 200px;
                 }
 
-                .dropdown li a {
-                    padding: 12px 40px !important;
-                    border-top: 1px solid #ddd;
-                }
-            }
-
-            /* Desktop hover effect */
-            @media (min-width: 769px) {
-                .dropdown {
-                    position: absolute;
-                    top: 100%;
-                    left: 0;
-                    background: white;
-                    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-                    display: none;
-                    min-width: 200px;
+                .dropdown-parent>a::after {
+                    content: '+';
+                    float: right;
+                    font-size: 18px;
+                    transition: transform 0.3s;
                 }
 
-                .has-dropdown:hover .dropdown {
-                    display: block;
-                }
-
-                .dropdown-arrow {
-                    display: none;
+                .dropdown-parent.dropdown-open>a::after {
+                    transform: rotate(45deg);
                 }
             }
         </style>
 
         <script>
-            function toggleMobileMenu() {
-                const nav = document.getElementById('mobileNav');
-                nav.classList.toggle('show');
-            }
+            document.addEventListener('DOMContentLoaded', function () {
+                const mobileToggler = document.querySelector('.mobile-nav__toggler');
+                const mainNav = document.querySelector('.main-header__nav');
+                const dropdownParent = document.querySelector('.dropdown-parent');
 
-            function toggleDropdown() {
-                const dropdown = document.getElementById('dropdownMenu');
-                const parent = document.getElementById('storiesDropdown');
+                // Mobile menu toggle
+                mobileToggler.addEventListener('click', function () {
+                    mainNav.classList.toggle('active');
+                });
 
-                if (window.innerWidth <= 768) {
-                    if (dropdown.style.display === 'none' || dropdown.style.display === '') {
-                        dropdown.style.display = 'block';
-                        dropdown.classList.add('show');
-                        parent.classList.add('open');
-                    } else {
-                        dropdown.style.display = 'none';
-                        dropdown.classList.remove('show');
-                        parent.classList.remove('open');
-                    }
-                }
-            }
-
-            // Close mobile menu when clicking dropdown items
-            document.addEventListener('click', function (e) {
-                if (e.target.closest('.dropdown a')) {
-                    if (window.innerWidth <= 768) {
-                        document.getElementById('mobileNav').classList.remove('show');
-                        document.getElementById('dropdownMenu').style.display = 'none';
-                        document.getElementById('storiesDropdown').classList.remove('open');
-                    }
+                // Mobile dropdown toggle
+                if (dropdownParent) {
+                    const link = dropdownParent.querySelector('a');
+                    link.addEventListener('click', function (e) {
+                        if (window.innerWidth <= 768) {
+                            e.preventDefault();
+                            dropdownParent.classList.toggle('dropdown-open');
+                        }
+                    });
                 }
             });
         </script><!-- /.main-header -->
